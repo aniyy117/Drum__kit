@@ -1,0 +1,124 @@
+:root {
+    --background: #091921;
+    --background_low:rgba(9,25,33,0.8);
+    --text: #00fff1;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background: var(--background);
+}
+
+.container {
+    padding: 10px;
+    min-height: 90vh;
+    margin: 3vh auto;
+    box-shadow: inset 2px 2px 5px var(--text),
+        inset -2px -2px 5px var(--text);
+    border-radius: 7px;
+}
+
+.title {
+    margin: 20px 0;
+    font-size: 4rem;
+    font-weight: bolder;
+    opacity: 0.9;
+    color: var(--text);
+}
+
+.drum {
+    width: 150px;
+    height: 150px;
+    background: var(--background);
+    color: var(--text);
+    font-size: 3rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+        1px 1px 3px rgba(0, 0, 0, 0.8);
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.w,
+.d,
+.l {
+    border-radius: 50%;
+
+}
+
+.volume__control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#volume__slider {
+    height: 7px;
+    width: 200px;
+    margin-left: 10px;
+    appearance: none;
+    background: var(--text);
+    border-radius: 7px;
+    outline: none;
+}
+
+#volume__slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--text);
+    cursor: pointer;
+}
+
+.fa {
+    color: var(--text);
+    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+        1px 1px 3px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.util__buttons {
+    margin-top: 40px;
+}
+
+.util__buttons>button {
+    height: 50px;
+    width: 200px;
+    font-family: sans-serif;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: var(--background);
+    color: var(--text);
+    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+        1px 1px 3px rgba(0, 0, 0, 0.8);
+    margin: 10px 4px;
+    cursor: pointer;
+}
+
+#util__button-theme {
+    color: var(--background);
+    background: var(--text);
+}
+
+.pressed {
+    opacity: 0.5;
+    box-shadow: -1px -1px 3px var(--background);
+}
+
+.auto_music_on , .change_theme__pressed {
+    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
+        inset 1px 1px 3px rgba(0, 0, 0, 0.8) !important;
+}
